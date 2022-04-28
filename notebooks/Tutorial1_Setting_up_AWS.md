@@ -1,13 +1,19 @@
 # Tutorial 1: Setting up your AWS Account
 
-Aloha challenge participant 🤙 We are glad to welcome you to the fifth Global Data Science Challenge (GDSC). This year is all about [fighting river blindness](https://www.capgemini.com/code-for-a-cure/#:~:text=Launching%20in%20early%202022%2C%20'Code,neglected%20tropical%20diseases%2C%20River%20Blindness). On this journey, we will be using a few different machine learning techniques and algorithms as well as the AWS cloud ☁️. This very first tutorial is about helping you setting up your AWS account.
+Aloha challenge participant 🤙 We are glad to welcome you to the fifth Global Data Science Challenge (GDSC). This year is all about [fighting river blindness](https://www.capgemini.com/code-for-a-cure/#:~:text=Launching%20in%20early%202022%2C%20'Code,neglected%20tropical%20diseases%2C%20River%20Blindness). On this journey, we will be using a few different machine learning techniques and algorithms as well as the AWS cloud ☁️. This very first tutorial is about helping you setting up your AWS account. In this tutorial, we will:
+
+- Set up the AWS Sagemaker Studio environment which we will use throughout the challenge,
+- Add a custom docker image to the environment, which has all preliminary libraries installed,
+- Download the tutorials (Jupyter Notebooks) for the challenge,
+- Learn how to work with Amazon Sagemaker Studio Notebooks, and
+- Set up auto shutdown for idle instances to save costs.
 
 Along with this tutorial, there is a [video](TODO: add link to video) which walks you through the steps performed here. The video is optional for you. In this notebook tutorial the command line interface (CLI) is used for the majority of the tasks.  In the video, we mainly use the AWS Web Interface (also called AWS Console) to achieve the same. This is sometimes a bit easier, especially if you don't have a tech background. Feel free to choose whichever you prefer. 
 
 Since your group only need to perform the tasks in this tutorial once, only one of your team members need to go through this tutorial. Please ask your team mates first!
-Not finished? Alright, lets jump in!
 
-Finished? Nice! We still recommend to go through section 6. Work with Amazon Sagemaker Studio Notebooks and maybe take a look at section 7. Optional references. 
+- Not finished? Alright, lets jump in!
+- Finished? Nice! We still recommend to go through section 6. Work with Amazon Sagemaker Studio Notebooks and maybe take a look at section 7. Optional references. 
 
 
 ## Setting up the Sagemaker Studio images and kernels
@@ -262,8 +268,6 @@ time . You did a great job saving costs and carbon emissions. Planet earth says 
 
 ## Summary
 
+In this tutorial, we have set up all the necessary resources to participate in the GDSC. Now, your team is ready to take part in this exiting challenge. We hope that everything in this tutorial went fine and that you will have a lots of fun in the course of the challenge. If anything didn't work out as expected, we recommend one last time taking a look at the [Video](TODO: INSERT VIDEO LINK) for this tutorial. 
 
-
-In this tutorial we had a first investigation of the available data. We learned how to download the data, about the different types of stainings and the imbalances of our dataset. A good understanding of the data you are working with is an essential part of any data science project and is a requirement for being able to build a good solution. This notebook showed you the first steps. 
-
-In the next tutorial we will build a first simple object detection model and submit our first results.
+All right, thats it! ✅ You can now jump to Tutorial 2: Exploratory Data Analysis. You fill find it in the notebooks folder in the repository we downloaded to your Sagemaker Studio filesystem. Have fun!
