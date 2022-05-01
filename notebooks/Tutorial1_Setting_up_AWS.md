@@ -1,6 +1,6 @@
 # Tutorial 1: Setting up your AWS Account
 
-Aloha challenge participant 🤙 We are glad to welcome you to the fifth Global Data Science Challenge (GDSC). This year is all about [fighting river blindness](https://www.capgemini.com/code-for-a-cure/#:~:text=Launching%20in%20early%202022%2C%20'Code,neglected%20tropical%20diseases%2C%20River%20Blindness). On this journey, we will be using a few different machine learning techniques and algorithms as well as the AWS cloud ☁️. This very first tutorial is about helping you setting up your AWS account. In this tutorial, we will:
+Aloha challenge participant 🤙 We are glad to welcome you to the fifth Global Data Science Challenge (GDSC). This year is all about [fighting river blindness](https://gdsc.ce.capgemini.com/app/data). On this journey, we will be using a few different machine learning techniques and algorithms as well as the AWS cloud ☁️. This very first tutorial is about helping you setting up your AWS account. In this tutorial, we will:
 
 - Set up the AWS Sagemaker Studio environment which we will use throughout the challenge,
 - Add a custom docker image to the environment, which has all preliminary libraries installed,
@@ -13,12 +13,12 @@ Along with this tutorial, there is a [video](TODO: add link to video) which walk
 Since your group only need to perform the tasks in this tutorial once, only one of your team members need to go through this tutorial. Please ask your team mates first!
 
 - Not finished? Alright, lets jump in!
-- Finished? Nice! We still recommend to go through section 6. Work with Amazon Sagemaker Studio Notebooks and maybe take a look at section 7. Optional references. 
+- Finished? Nice! We still recommend to go through section *6. Work with Amazon Sagemaker Studio Notebooks* and maybe take a look at section *7. Optional references*. 
 
 
 ## Setting up the Sagemaker Studio images and kernels
 
-During the challenge, we will be working in [Sagemaker Studio](https://aws.amazon.com/sagemaker/studio/). This service provides a managed jupyter lab environment in which we can execute our notebooks. To use Sagemaker Studio we need to create a sagemaker domain and add a user to this domain (one per team is sufficient). After we did this, we will download the notebooks to the freshly created jupyter lab. In order to execute the notebooks, there are plenty dependencies and libraries we need to have installed. To simplify this for you, we will use a custom Docker image created in advance. We will just need to attach this image to your sagemaker studio domain and you can use it afterwards as a kernel in juypter lab.
+During the challenge, we will be working in [Sagemaker Studio](https://aws.amazon.com/sagemaker/studio/). This service provides a managed [jupyter lab](https://jupyter.org/) environment in which we can run our code. To use Sagemaker Studio we need to create a sagemaker domain and add a user to this domain (one per team is sufficient). Afterwards, we will download the training notebooks and code to the freshly created jupyter lab. In order to execute the notebooks, there are plenty dependencies and libraries we need to have installed. To simplify this for you, we prepared a custom Docker image that has everything already installed and set up. We will just need to attach this image to your sagemaker studio domain and you can use it afterwards as a kernel in juypter lab.
 
 TLDR; In this section of the tutorial, we will:
 - Create a new sagemaker domain,
@@ -94,11 +94,10 @@ make create-image REGION=us-east-1
 
 The image will take a few minutes until it is visible in the studio. We will take a look at it later on.
 
-### 3. Open the Sagemaker Studio domain 
-
-
-
 Did all of the commands above execute successfully? Awesome! Lets open the Sagemaker Studio! If not, I recommend you watch the video for this tutorial.
+
+
+### 3. Open the Sagemaker Studio domain 
 
 We can find the created Sagemaker Studio Domain in the AWS Management Console. First, navigate to the AWS Sagemaker Service. The easiest way to get there is via the search bar:
 
@@ -141,7 +140,7 @@ This will add all scripts and tutorials to the directory gdsc5-tutorials-public.
 ### 5. Set up version control
 
 
-Now we need to replace the remote from the previously downloaded git repository, so that we can use our own [CodeCommit](https://www.amazonaws.cn/en/codecommit/#:~:text=Amazon%20CodeCommit%20is%20a%20fully,worry%20about%20scaling%20its%20infrastructure.) repo. CodeCommit a version control management system from AWS, just like Github or Gitlab. We will create a Repo to store our software and add this as our new remote, i.e. the safe location where our code is pushed to after we changed it locally. We will show you how all this works!
+Now we need to replace the remote from the previously downloaded git repository, so that we can use our own [CodeCommit](https://www.amazonaws.cn/en/codecommit/#:~:text=Amazon%20CodeCommit%20is%20a%20fully,worry%20about%20scaling%20its%20infrastructure.) repository. CodeCommit a version control management system from AWS, just like Github or Gitlab. We will create a repository to store our code and add this as our new remote, i.e. the safe location where our code is pushed to after we changed it locally. We will show you how all this works!
 
 To start, we need to open a system terminal from the launcher. If the launcher didn't open automatically right from the start, click on the little plus sign at the top left corner, right below "Amazon Sagemaker Studio". Now we can click on "System Terminal" in the section "Utilities and files" and a new Terminal opens.
 
@@ -226,7 +225,7 @@ All these tasks will be performed in the Sagemaker Studio UI. Yes you heard righ
 ## Installing the auto-shutdown extension to save costs
 
 
-This section is optional, but it helps your team to save costs. And btw, it also helps the environment by reducing carbon emissions! Therefore, we strongly encourage you to go through these steps.
+This section is optional, but it helps your team to save costs and helps the environment by reducing carbon emissions! Therefore, we strongly encourage you to go through these steps.
 
 The [auto-shutdown extension](https://github.com/aws-samples/sagemaker-studio-auto-shutdown-extension#sagemaker-studio-autoshutdown-extension) is an extension to Sagemaker Studio which, as the name suggests, automatically stops idle instances after a predefined time. Idle means that there aren't any user initiated activities running on the machine. In this section we will:
 
