@@ -117,8 +117,6 @@ This will open the Sagemaker Studio (it looks like and essentially is Jupyter La
 
 ### 4. Clone the notebooks into Sagemaker Studio
 
-
-
 In the left pane, click on the "Git" sign second in the list. Afterwards, click on "Clone a repository" and a pop up opens.
 
 ![](../docs/smstudio-git.png "The git sign and clone repository button in Sagemaker Studio")
